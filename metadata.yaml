@@ -1,0 +1,5 @@
+homepage: "https://www.stackadapt.com"
+documentation: "https://github.com/StackAdapt/stackadapt-gtm-server-side-pixel"
+versions:
+  - sha: 37c2dfe007b5378b1474d598a9ee03e8c61b551c
+    changeNotes: Initial release of template file
