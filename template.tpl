@@ -273,7 +273,7 @@ function addCustomProperties(pixel_type){
 		return "";
 	}
 
-	if (pixel_type != "conv") {
+	if (pixel_type != "rt") {
 		return "&args="+encodeUriComponent(JSON.stringify(args));
 	} else {
 		let url_params = "";
