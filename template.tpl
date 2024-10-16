@@ -308,7 +308,7 @@ function buildUrl(pixel_type) {
 	let user_id = getSetUserId();
 
 	return sa_url + "&gtm_ss=1&ip_fwd=" + encodeUriComponent(ip_address) + "&url=" + encodeUriComponent(page_url) + 
-		"&ref" + encodeUriComponent(page_ref) + "&title=" + encodeUriComponent(title) + "&utm_source=" + encodeUriComponent(campaign_source) + 
+		"&ref=" + encodeUriComponent(page_ref) + "&title=" + encodeUriComponent(title) + "&utm_source=" + encodeUriComponent(campaign_source) + 
 		"&engage_time=" + encodeUriComponent(engagement_time) + "&user_id=" + encodeUriComponent(user_id) + addCustomProperties(pixel_type);
 }
 
