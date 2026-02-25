@@ -186,7 +186,7 @@ const customProperties = {
 if (data.pixelType == 'rt') {
 	sendRt();
 } else if (data.pixelType == 'drt') {
-	sendRt();
+	sendDrt();
 } else if (data.pixelType == 'conv') {
 	sendConv();
 } else if (data.pixelType == 'lal') {
@@ -232,7 +232,7 @@ function sendRequest(url) {
 function addCustomProperties(pixel_type){
 	let args = {};
 
-	const eventData = require('getAllEventData');
+	const eventData = getAllEventData();
 
 	for (let key in eventData) {
 		if (customProperties[key]) {
@@ -638,6 +638,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 8/28/2023, 4:59:30 PM
+Created on 2/25/2026, 12:20:45 PM
 
 
