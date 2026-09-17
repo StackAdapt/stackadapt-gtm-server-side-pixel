@@ -73,22 +73,6 @@ ___TEMPLATE_PARAMETERS___
         "type": "SELECT",
         "selectItems": [
           {
-            "value": "email",
-            "displayValue": "Email"
-          },
-          {
-            "value": "first_name",
-            "displayValue": "First Name"
-          },
-          {
-            "value": "last_name",
-            "displayValue": "Last Name"
-          },
-          {
-            "value": "phone",
-            "displayValue": "Phone Number"
-          },
-          {
             "value": "order_id",
             "displayValue": "Order ID"
           },
@@ -241,21 +225,6 @@ function addCustomProperties(pixel_type){
 	}
 
 	//logToConsole(JSON.stringify(eventData));
-
-	if (eventData.user_data) {
-		if (!args.email && eventData.user_data.email_address) {
-			args.email = eventData.user_data.email_address;
-		}
-		if (!args.phone && eventData.user_data.phone_number) {
-			args.phone = eventData.user_data.phone_number;
-		}
-		if (!args.first_name && eventData.user_data.first_name) {
-			args.first_name = eventData.user_data.first_name;
-		}
-		if (!args.last_name && eventData.user_data.last_name) {
-			args.last_name = eventData.user_data.last_name;
-		}
-	}
 
   if (data.commonProperties) {
     for (let key in data.commonProperties) {
